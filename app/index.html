@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Upworthy Link Submission | Got Something Upworthy?</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css" />
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+   <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+<div class="page-cont">
+
+        <form class="up-form col-xs-12 col-sm-7 col-lg-4 center-block" method="post" action="/" role="form" data-toggle="validator">
+
+            <h2 class="title-form">Got Something?</h2>
+            <p>What's the best thing you've seen all week? Anything that we missed? We'd love to know what you think should be featured.</p>
+            <p>Use the form below to submit your favorite stuff to us for consideration. Thanks in advance for your input!</p>
+            <ul class="up-form-list center-block">
+                <li class="form-group">
+                    <label for="email" class="control-label">Email*</label>
+                    <input class="form-control" type="email" name="email" required>
+                    <div class="help-block with-errors"></div>
+                </li>
+                <li class="form-group">
+                    <label class="control-label" for="usr-link">Link* <span>(ex. http://website.com)</span></label>
+                    <input class="form-control" type="url" name="usr-link" required>
+                    <div class="help-block with-errors"></div>
+                </li>
+                <li>
+                    <label class="control-label" for="source">Where did you first see this content?</label>
+
+                    <div class="form-group text-center clearfix">
+                        <div class="radio radio-grp col-xs-4 col-sm-2">
+                            <label>Facebook
+                                <input type="radio" name="content" checked required>
+                            </label>
+                        </div>
+
+                        <div class="radio radio-grp col-xs-4 col-sm-2">
+                            <label>Twitter
+                                <input type="radio" name="content" required>
+                            </label>
+                        </div>
+
+                        <div class="radio radio-grp col-xs-4 col-sm-2">
+                            <label>Youtube
+                                <input type="radio" name="content" required>
+                            </label>
+                        </div>
+
+                        <div class="radio radio-grp col-xs-4 col-sm-2">
+                            <label>Reddit
+                                <input type="radio" name="content" required>
+                            </label>
+                        </div>
+
+                        <div class="radio radio-grp col-xs-4 col-sm-2">
+                            <label>I made it
+                                <input type="radio" name="content" required>
+                            </label>
+                        </div>
+                        <div class="radio radio-grp col-xs-4 col-sm-2 clearfix">
+                            <label>Other
+                                <input class="other" id="other" type="radio" name="content" required>
+                            </label>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="other-cont is-hidden clearfix">
+                            <input class="form-control other-text" type="text" name="other" placeholder="Please enter where you first saw this content" required disabled>
+                        </div>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </li>
+                <input class="btn default" type="submit" value="submit" />
+            </ul>
+        </form>
+
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>

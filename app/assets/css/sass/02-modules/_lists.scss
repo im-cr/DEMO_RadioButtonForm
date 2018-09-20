@@ -1,0 +1,38 @@
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+//specific form styles
+.up-form {
+    //width:640px;
+    margin:40px auto;
+    padding:21px 15px;
+    float:none;
+
+    label {
+        display:block;
+        line-height:1;
+        @include droid;
+
+        span {
+            font-size:10px;
+            font-style:italic;
+        }
+    }
+}
+
+.up-form-list {
+    margin:40px 0;
+    padding:30px 25px;
+    border-radius:5px;
+    border:solid 3px rgba(200,200,200,.4);
+    background:rgba(255,255,255,.8);
+    -webkit-animation:fadeUp 1s 1;
+
+    li {
+        position:relative;
+        margin:5px 0px 20px;
+    }
+}
